@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #84DCC6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a.NewsController">
+   <children>
+      <AnchorPane layoutX="-12.0" prefHeight="600.0" prefWidth="301.0" style="-fx-background-color: #4B4E6D;">
+         <children>
+            <Label layoutX="41.0" layoutY="44.0" text="Technological">
+               <font>
+                  <Font name="Comic Sans MS" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="85.0" text="Development">
+               <font>
+                  <Font name="Comic Sans MS" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="121.0" text="News">
+               <font>
+                  <Font name="Comic Sans MS" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="198.0" prefHeight="26.0" prefWidth="209.0" text="Here you can see the news" textFill="RED">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="115.0" layoutY="546.0" mnemonicParsing="false" onAction="#con" style="-fx-background-color: #ffff00;" text="Contact Us" />
+            <Button layoutX="59.0" layoutY="241.0" mnemonicParsing="false" onAction="#t1" prefHeight="34.0" prefWidth="190.0" style="-fx-background-color: #ffebcd;" text="Technology" />
+            <Button layoutX="59.0" layoutY="300.0" mnemonicParsing="false" onAction="#t2" prefHeight="34.0" prefWidth="190.0" style="-fx-background-color: #ffebcd;" text="Sports" />
+            <Button layoutX="59.0" layoutY="360.0" mnemonicParsing="false" onAction="#t3" prefHeight="34.0" prefWidth="190.0" style="-fx-background-color: #ffebcd;" text="Business" />
+            <Button layoutX="59.0" layoutY="420.0" mnemonicParsing="false" onAction="#t4" prefHeight="34.0" prefWidth="190.0" style="-fx-background-color: #ffebcd;" text="Economy" />
+            <Button fx:id="log" layoutX="122.0" layoutY="480.0" mnemonicParsing="false" onAction="#out" text="Log out" />
+         </children></AnchorPane>
+      <ImageView fx:id="o1" fitHeight="150.0" fitWidth="220.0" layoutX="314.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="o2" fitHeight="150.0" fitWidth="220.0" layoutX="561.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="o3" fitHeight="150.0" fitWidth="220.0" layoutX="312.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="o4" fitHeight="150.0" fitWidth="220.0" layoutX="565.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="l1" layoutX="314.0" layoutY="191.0" prefHeight="71.0" prefWidth="220.0" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="l2" layoutX="565.0" layoutY="191.0" prefHeight="71.0" prefWidth="220.0" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="l3" layoutX="312.0" layoutY="479.0" prefHeight="71.0" prefWidth="220.0" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="l4" layoutX="565.0" layoutY="479.0" prefHeight="71.0" prefWidth="220.0" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </TextArea>
+      <MenuBar fx:id="f" layoutX="248.0" layoutY="250.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu Bar">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#bio" text="Biotechnology" />
+                  <MenuItem mnemonicParsing="false" onAction="#art" text="Artifical Intelligence" />
+              <MenuItem fx:id="aud" mnemonicParsing="false" onAction="#aud" text="Audio and Visual techology" />
+                  <MenuItem mnemonicParsing="false" onAction="#In" text="Internet" />
+                  <MenuItem mnemonicParsing="false" onAction="#co" text="computers" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

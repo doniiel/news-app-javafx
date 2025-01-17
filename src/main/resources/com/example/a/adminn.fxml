@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: darkorchid;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a.adminn">
+   <children>
+      <Label layoutX="427.0" layoutY="145.0" prefHeight="71.0" prefWidth="307.0" text="Admin Page!" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="52.0" />
+         </font>
+      </Label>
+      <TextField id="us" fx:id="U" layoutX="98.0" layoutY="229.0" prefHeight="34.0" prefWidth="288.0" promptText="UserName" style="-fx-background-color: darkorchid; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField id="us" fx:id="P" layoutX="98.0" layoutY="334.0" prefHeight="34.0" prefWidth="288.0" promptText="Password" style="-fx-background-color: darkorchid; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="loginn" layoutX="178.0" layoutY="426.0" lineSpacing="15.0" mnemonicParsing="false" onMouseClicked="#llogin" prefHeight="42.0" prefWidth="127.0" style="-fx-background-color: white; -fx-text-fill: darkorchid; -fx-background-size: 3px;" text="Login" textFill="DARKSLATEBLUE">
+         <font>
+            <Font name="Segoe UI Black" size="20.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Button>
+      <Button fx:id="backk" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#backkk" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: darkorchid; -fx-text-fill: white;" text="Back" textFill="DARKSLATEBLUE">
+         <font>
+            <Font name="Segoe UI Black" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb1" layoutX="98.0" layoutY="263.0" prefHeight="18.0" prefWidth="127.0" text="Username Empty" textFill="RED" />
+      <Label fx:id="lb2" layoutX="98.0" layoutY="368.0" prefHeight="18.0" prefWidth="127.0" text="Password Empty" textFill="RED" />
+   </children>
+</AnchorPane>
